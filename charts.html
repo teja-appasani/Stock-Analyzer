@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body onload="renderChartsPage()">
+  <nav>
+    <h2>Stock Analyzer</h2>
+    <a href="index.html">Overview</a>
+    <a href="health.html">Financial Health</a>
+    <a href="piotroski.html">Piotroski</a>
+    <a href="altman.html">Altman Z</a>
+    <a href="charts.html">Charts</a>
+  </nav>
+
+  <main>
+    <h1>Financial Charts</h1>
+
+    <div class="card">
+      <h3>Stock Price Trend</h3>
+      <canvas id="priceChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>Revenue vs Net Income</h3>
+      <canvas id="financialChart"></canvas>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
